@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection.vue'
 import SpecialsCarousel from './components/SpecialsCarousel.vue'
 import ChefSection from './components/ChefSection.vue';
 import GallerySection from './components/GallerySection.vue';
+import ReservationSection from './components/ReservationSection.vue';
 </script>
 
 <template>
@@ -17,5 +18,7 @@ import GallerySection from './components/GallerySection.vue';
   <ChefSection />
 
   <GallerySection />
+
+  <ReservationSection />
 
 </template>
