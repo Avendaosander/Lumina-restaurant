@@ -2,6 +2,8 @@
 import Navbar from './components/Navbar.vue'
 import HeroSection from './components/HeroSection.vue'
 import SpecialsCarousel from './components/SpecialsCarousel.vue'
+import ChefSection from './components/ChefSection.vue';
+
 </script>
 
 <template>
@@ -11,5 +13,7 @@ import SpecialsCarousel from './components/SpecialsCarousel.vue'
   <HeroSection />
 
   <SpecialsCarousel />
+
+  <ChefSection />
 
 </template>
