@@ -3,7 +3,7 @@ import Navbar from './components/Navbar.vue'
 import HeroSection from './components/HeroSection.vue'
 import SpecialsCarousel from './components/SpecialsCarousel.vue'
 import ChefSection from './components/ChefSection.vue';
-
+import GallerySection from './components/GallerySection.vue';
 </script>
 
 <template>
@@ -15,5 +15,7 @@ import ChefSection from './components/ChefSection.vue';
   <SpecialsCarousel />
 
   <ChefSection />
+
+  <GallerySection />
 
 </template>

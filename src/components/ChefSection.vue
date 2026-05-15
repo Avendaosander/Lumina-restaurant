@@ -32,7 +32,7 @@
           </p>
 
           <h2 class="text-5xl font-bold mb-6 leading-tight">
-            WIRED NO QUIERE JUGAR KITEO, AYUDA
+            Crafted by Passion,<br/>Driven by Perfection
           </h2>
 
           <p class="text-gray-400 text-lg leading-relaxed mb-10">
