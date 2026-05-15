@@ -1,6 +1,7 @@
 <template>
   <section
     class="relative h-screen overflow-hidden"
+    id="home"
   >
 
     <!-- BACKGROUND IMAGE -->

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32 bg-[#0f0f0f] text-white">
+  <section class="py-32 bg-[#0f0f0f] text-white" id="gallery">
 
     <div class="container">
 

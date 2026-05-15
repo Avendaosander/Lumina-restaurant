@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32 bg-black text-white">
+  <section class="py-32 bg-black text-white" id="reservations">
 
     <div class="container">
 

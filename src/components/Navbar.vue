@@ -2,42 +2,47 @@
   <nav
     class="navbar navbar-expand-lg fixed-top px-4 py-3 transition-all duration-300"
     :class="scrolled
-      ? 'bg-black/90 backdrop-blur-md shadow-2xl'
+      ? 'bg-black/90 backdrop-blur-md shadow-lg'
       : 'bg-transparent'"
   >
     <div class="container">
 
       <!-- LOGO -->
       <a
-        class="navbar-brand text-3xl font-bold tracking-[0.3em] text-yellow-400"
         href="#"
+        class="navbar-brand text-yellow-400 text-3xl fw-bold"
       >
         LÚMINA
       </a>
 
-      <!-- TOGGLER -->
+      <!-- BUTTON MOBILE -->
       <button
-        class="navbar-toggler border-0 shadow-none"
+        class="navbar-toggler border-0"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
+        @click="toggleMenu"
       >
-        <span class="text-white text-3xl">
+        <span class="text-white fs-2">
           ☰
         </span>
       </button>
 
-      <!-- LINKS -->
+      <!-- MENU -->
       <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarContent"
+        class="navbar-collapse"
+        :class="[
+          isOpen ? 'd-block' : 'd-none',
+          'd-lg-flex justify-content-end'
+        ]"
       >
-        <ul class="navbar-nav gap-lg-4 text-center mt-4 mt-lg-0">
+
+        <ul
+          class="navbar-nav gap-lg-4 text-center mt-4 mt-lg-0"
+        >
 
           <li class="nav-item">
             <a
-              class="nav-link text-white hover:text-yellow-400 transition duration-300 text-lg"
-              href="#"
+              href="#home"
+              class="nav-link text-white hover:text-yellow-400 transition duration-300"
             >
               Inicio
             </a>
@@ -45,8 +50,8 @@
 
           <li class="nav-item">
             <a
-              class="nav-link text-white hover:text-yellow-400 transition duration-300 text-lg"
-              href="#"
+              href="#menu"
+              class="nav-link text-white hover:text-yellow-400 transition duration-300"
             >
               Menú
             </a>
@@ -54,8 +59,8 @@
 
           <li class="nav-item">
             <a
-              class="nav-link text-white hover:text-yellow-400 transition duration-300 text-lg"
-              href="#"
+              href="#gallery"
+              class="nav-link text-white hover:text-yellow-400 transition duration-300"
             >
               Galería
             </a>
@@ -63,14 +68,15 @@
 
           <li class="nav-item">
             <a
-              class="nav-link text-white hover:text-yellow-400 transition duration-300 text-lg"
-              href="#"
+              href="#reservations"
+              class="nav-link text-white hover:text-yellow-400 transition duration-300"
             >
               Reservas
             </a>
           </li>
 
         </ul>
+
       </div>
 
     </div>
@@ -80,7 +86,12 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
+const isOpen = ref(false)
 const scrolled = ref(false)
+
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value
+}
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 50

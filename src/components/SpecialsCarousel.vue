@@ -40,7 +40,7 @@ const dishes = [
 </script>
 
 <template>
-  <section class="py-32 bg-[#111111] relative">
+  <section class="py-32 bg-[#111111] relative" id="menu">
 
     <div class="container">
 
