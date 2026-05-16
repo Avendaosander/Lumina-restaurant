@@ -1,79 +1,83 @@
 <template>
-  <section class="py-32 bg-black text-white" id="reservations">
+  <section
+    id="reservations"
+    class="w-full overflow-x-clip bg-black py-32 text-white max-md:py-20"
+  >
+    <div class="container min-w-0 max-w-full px-3 sm:px-4">
 
-    <div class="container">
-
-      <!-- HEADER -->
-      <div class="text-center mb-16" data-aos="fade-up">
-
-        <p class="uppercase tracking-[0.4em] text-yellow-400 mb-3">
+      <div
+        class="mb-16 text-center max-md:mb-10"
+        data-aos="fade-up"
+      >
+        <p class="mb-3 text-sm uppercase tracking-[0.25em] text-yellow-400 sm:tracking-[0.4em]">
           Reservas
         </p>
 
-        <h2 class="text-5xl font-bold">
+        <h2 class="text-3xl font-bold sm:text-4xl md:text-5xl">
           Reserva tu Mesa
         </h2>
 
-        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+        <p class="mx-auto mt-4 max-w-2xl px-1 text-sm leading-relaxed text-gray-400 sm:text-base">
           Reserva tu experiencia culinaria en Lúmina. Recomendamos reservar con anticipación para obtener asientos premium.
         </p>
-
       </div>
 
-      <!-- FORM -->
-      <div class="max-w-3xl mx-auto bg-[#111111] p-10 rounded-[2.5rem] shadow-2xl border border-white/5"
-           data-aos="zoom-in">
+      <div
+        class="mx-auto w-full max-w-3xl rounded-3xl border border-white/5 bg-[#111111] p-5 shadow-2xl sm:p-8 md:rounded-[2.5rem] md:p-10"
+        data-aos="zoom-in"
+      >
+        <form class="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 md:gap-6">
 
-        <form class="grid md:grid-cols-2 gap-6">
-
-          <!-- NAME -->
-          <div class="flex flex-col">
-            <label class="text-sm mb-2 text-gray-400" for="name">Nombre Completo</label>
+          <div class="flex min-w-0 flex-col">
+            <label class="mb-2 text-sm text-gray-400" for="name">Nombre Completo</label>
             <input
               type="text"
               id="name"
+              name="name"
+              autocomplete="name"
               placeholder="John Doe"
-              class="bg-black border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-400"
+              class="w-full min-w-0 rounded-xl border border-gray-700 bg-black px-4 py-3.5 text-base focus:border-yellow-400 focus:outline-none sm:py-3"
             />
           </div>
 
-          <!-- EMAIL -->
-          <div class="flex flex-col">
-            <label class="text-sm mb-2 text-gray-400" for="email">Correo Electrónico</label>
+          <div class="flex min-w-0 flex-col">
+            <label class="mb-2 text-sm text-gray-400" for="email">Correo Electrónico</label>
             <input
               type="email"
               id="email"
+              name="email"
+              autocomplete="email"
               placeholder="john@email.com"
-              class="bg-black border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-400"
+              class="w-full min-w-0 rounded-xl border border-gray-700 bg-black px-4 py-3.5 text-base focus:border-yellow-400 focus:outline-none sm:py-3"
             />
           </div>
 
-          <!-- DATE -->
-          <div class="flex flex-col">
-            <label class="text-sm mb-2 text-gray-400" for="date">Fecha</label>
+          <div class="flex min-w-0 flex-col">
+            <label class="mb-2 text-sm text-gray-400" for="date">Fecha</label>
             <input
               type="date"
               id="date"
-              class="bg-black border placeholder-white border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-400"
+              name="date"
+              class="w-full min-w-0 max-w-full rounded-xl border border-gray-700 bg-black px-4 py-3.5 text-base text-white focus:border-yellow-400 focus:outline-none sm:py-3 [color-scheme:dark]"
             />
           </div>
 
-          <!-- TIME -->
-          <div class="flex flex-col">
-            <label class="text-sm mb-2 text-gray-400" for="time">Hora</label>
+          <div class="flex min-w-0 flex-col">
+            <label class="mb-2 text-sm text-gray-400" for="time">Hora</label>
             <input
               type="time"
               id="time"
-              class="bg-black border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-400"
+              name="time"
+              class="w-full min-w-0 max-w-full rounded-xl border border-gray-700 bg-black px-4 py-3.5 text-base text-white focus:border-yellow-400 focus:outline-none sm:py-3 [color-scheme:dark]"
             />
           </div>
 
-          <!-- PEOPLE -->
-          <div class="flex flex-col md:col-span-2">
-            <label class="text-sm mb-2 text-gray-400" for="people">Invitados</label>
+          <div class="flex min-w-0 flex-col md:col-span-2">
+            <label class="mb-2 text-sm text-gray-400" for="people">Invitados</label>
             <select
               id="people"
-              class="bg-black border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-400"
+              name="people"
+              class="w-full min-w-0 rounded-xl border border-gray-700 bg-black px-4 py-3.5 text-base focus:border-yellow-400 focus:outline-none sm:py-3"
             >
               <option>1 Persona</option>
               <option>2 Personas</option>
@@ -83,21 +87,18 @@
             </select>
           </div>
 
-          <!-- BUTTON -->
           <div class="md:col-span-2">
             <button
               type="submit"
-              class="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full transition duration-300 hover:scale-105 shadow-xl"
+              class="w-full rounded-full bg-yellow-400 py-3.5 text-base font-bold text-black shadow-xl transition duration-300 hover:bg-yellow-300 sm:py-4 md:hover:scale-105"
             >
               Confirmar Reserva
             </button>
           </div>
 
         </form>
-
       </div>
 
     </div>
-
   </section>
 </template>

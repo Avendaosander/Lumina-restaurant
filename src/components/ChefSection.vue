@@ -5,7 +5,6 @@
 
       <div class="grid md:grid-cols-2 gap-16 items-center">
 
-        <!-- IMAGEN -->
         <div
           class="relative group"
           data-aos="fade-right"
@@ -15,16 +14,13 @@
             class="w-full h-[600px] object-cover rounded-[2.5rem] shadow-2xl group-hover:scale-105 transition duration-700"
           />
 
-          <!-- overlay decorativo -->
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-[2.5rem]"></div>
 
-          <!-- badge -->
           <div class="absolute top-6 left-6 bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold tracking-widest">
             Jefe de Cocina
           </div>
         </div>
 
-        <!-- CONTENIDO -->
         <div data-aos="fade-left">
 
           <p class="uppercase tracking-[0.4em] text-yellow-400 mb-4">
@@ -41,7 +37,6 @@
             con innovación para crear experiencias gastronómicas inolvidables.
           </p>
 
-          <!-- STATS -->
           <div class="grid grid-cols-3 gap-6 mb-10">
 
             <div>
@@ -61,7 +56,6 @@
 
           </div>
 
-          <!-- CTA -->
           <button
             class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-300 transition hover:scale-105"
           >
