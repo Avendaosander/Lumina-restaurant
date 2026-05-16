@@ -7,32 +7,32 @@ import 'swiper/css/navigation'
 
 const dishes = [
   {
-    title: 'Truffle Pasta',
+    title: 'Pasta con Trufa',
     price: '$32',
     image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9',
   },
   {
-    title: 'Premium Steak',
+    title: 'Filete Premium',
     price: '$48',
     image: 'https://images.unsplash.com/photo-1544025162-d76694265947',
   },
   {
-    title: 'Salmon Deluxe',
+    title: 'Salmón Deluxe',
     price: '$36',
     image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288',
   },
   {
-    title: 'Chocolate Lava Cake',
+    title: 'Pastel de Chocolate Fundido',
     price: '$18',
     image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307',
   },
   {
-    title: 'Gourmet Burger',
+    title: 'Hamburguesa Gourmet',
     price: '$28',
     image: 'https://images.unsplash.com/photo-1550547660-d9450f859349',
   },
   {
-    title: 'Caesar Salad Premium',
+    title: 'Ensalada César Premium',
     price: '$22',
     image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1',
   },
@@ -47,10 +47,10 @@ const dishes = [
       <!-- TITULO -->
       <div class="text-center mb-16">
         <p class="uppercase tracking-[0.4em] text-yellow-400 mb-3">
-          Signature Dishes
+          Platos del chef
         </p>
         <h2 class="text-5xl font-bold text-white">
-          Culinary Masterpieces
+          Obras culinarias exclusivas
         </h2>
       </div>
 
@@ -96,11 +96,11 @@ const dishes = [
                 </div>
 
                 <p class="text-gray-400">
-                  Crafted with premium ingredients.
+                  Elaborado con ingredientes de primera calidad.
                 </p>
 
                 <button class="mt-6 w-full py-3 bg-yellow-400 hover:bg-yellow-300 text-black rounded-full font-semibold transition">
-                  Order Now
+                  Pedir Ahora
                 </button>
               </div>
 

@@ -7,11 +7,11 @@
       <div class="text-center mb-16" data-aos="fade-up">
 
         <p class="uppercase tracking-[0.4em] text-yellow-400 mb-3">
-          Gallery
+          Galeria
         </p>
 
         <h2 class="text-5xl font-bold">
-          Culinary Art
+          Arte Culinaria
         </h2>
 
       </div>

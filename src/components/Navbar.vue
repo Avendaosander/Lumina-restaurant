@@ -9,8 +9,8 @@
 
       <!-- LOGO -->
       <a
-        href="#"
-        class="navbar-brand text-yellow-400 text-3xl fw-bold"
+        href="#home"
+        class="navbar-brand text-yellow-400 hover:text-yellow-500 hover:scale-110 transition duration-300 text-3xl fw-bold"
       >
         LÚMINA
       </a>

@@ -4,7 +4,6 @@
     id="home"
   >
 
-    <!-- BACKGROUND IMAGE -->
     <div
       class="absolute inset-0"
     >
@@ -37,22 +36,21 @@
           <p
             class="uppercase tracking-[0.4em] text-yellow-400 mb-4 text-sm md:text-base"
           >
-            Fine Dining Experience
+            Mas alla del gusto
           </p>
 
           <!-- TITLE -->
           <h1
             class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight text-white mb-6"
           >
-            A Culinary Journey Beyond Taste
+            Un viaje culinario inolvidable
           </h1>
 
           <!-- DESCRIPTION -->
           <p
             class="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl"
           >
-            Discover a luxurious gastronomic experience where every dish
-            is crafted with passion, elegance and unforgettable flavor.
+            Descubra una lujosa experiencia gastronómica donde cada plato está elaborado con pasión, elegancia y un sabor inolvidable.
           </p>
 
           <!-- BUTTONS -->
@@ -61,18 +59,22 @@
           >
 
             <!-- PRIMARY BUTTON -->
-            <button
-              class="btn px-5 py-3 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold rounded-full transition duration-300 shadow-2xl hover:scale-105"
-            >
-              Reserve a Table
-            </button>
+            <a href="#reservations">
+              <button
+                class="px-5 py-3 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold rounded-full transition duration-300 shadow-2xl hover:scale-105"
+              >
+                Reserva tu mesa
+              </button>
+            </a>
 
             <!-- SECONDARY BUTTON -->
-            <button
-              class="btn px-5 py-3 border border-white text-white hover:bg-white hover:text-black rounded-full transition duration-300"
-            >
-              Explore Menu
-            </button>
+            <a href="#menu"">
+              <button
+                class="px-5 py-3 border border-white text-white hover:!text-black hover:bg-white rounded-full transition duration-300"
+              >
+                Ver el menú
+              </button>
+            </a>
 
           </div>
 
